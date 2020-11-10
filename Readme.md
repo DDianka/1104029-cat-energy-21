@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Diana Dianka](https://up.htmlacademy.ru/adaptive/21/user/1104029).
-* Наставник: `Неизвестно`.
+* Наставник: [Марина Удовенко](https://htmlacademy.ru/profile/id7570).
 
 ---
 
