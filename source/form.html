@@ -7,7 +7,7 @@
 <body class="page__body">
 <header class="page-header">
   <a class="page-header__logo">
-    <img  src="https://via.placeholder.com/150x150">
+    <img  src="https://via.placeholder.com/150x150" alt="placeholder">
   </a>
   <nav class="main-nav">
     <button class="main-nav__toggle" type="button">
@@ -35,10 +35,132 @@
   </nav>
 </header>
 <main class="page-main">
-  <h1>
+  <h1 class="page-main__title">
     Подбор программы
   </h1>
+  <p class="page-main__intro">
+    Заполните анкету, и мы подберем программу питания для вашего кота
+  </p>
+  <form class="program" action="https://echo.htmlacademy.ru" method="post">
+  <fieldset class="parameter">
+    <legend class="visually-hidden">
+      Параметры
+    </legend>
+      <label class="parameter__label label"> Имя:*
+        <input type="text" class="parameter__input input" name="name" placeholder="Барсик" required>
+      </label>
+      <label class="parameter__label label"> Вес (кг):*
+        <input type="number" class="parameter__input input" name="weight" placeholder="7" required>
+      </label>
+      <label class="parameter__label label"> Возраст (лет):
+        <input type="number" class="parameter__input input" name="age"  placeholder="7">
+      </label>
+  </fieldset>
+  <fieldset class="plans">
+    <legend class="visually-hidden">
+       В планах
+    </legend>
+      <label class="plans__label label">
+        <input type="radio" class="plans__input input" name="plans_select" checked>
+        Похудение
+      </label>
+      <label class="plans__label label">
+        <input type="radio" class="plans__input input" name="plans_select">
+        Набор массы
+      </label>
+      <label class="plans__label label">
+        <input type="radio" class="plans__input input" name="plans_select">
+        Не знаю (нужен ваш совет)
+      </label>
+  </fieldset>
+    <fieldset class="contacts">
+      <legend class="contacts__title">
+        Контактные данные (владельца кота)
+      </legend>
+        <label class="contacts__label label">
+          <input type="email" class="contacts_input input" placeholder="keklachev@gmail.com" name="email" required>
+        </label>
+        <label class="contacts__label label">
+          <input type="tel" class="contacts_input input" placeholder="8 (960) 900-60-90" name="phone" required>
+        </label>
+    </fieldset>
+    <fieldset class="comment">
+      <legend class="comment__title">
+        Комментарий
+      </legend>
+      <label>
+      <textarea class="comment__textarea" placeholder="расскажите обо всех повадках кота" name="comment"></textarea>
+      </label>
+    </fieldset>
+    <fieldset class="extra-info">
+      <legend class="extra-info__title">
+        Дополнительно
+      </legend>
+      <label class="extra-info__label label">
+        <input class="extra-info__input input" type="checkbox" checked>
+        Сахарозаменитель
+      </label>
+      <label class="extra-info__label label">
+        <input class="extra-info__input input" type="checkbox">
+        Питьевая вода
+      </label>
+      <label class="extra-info__label label">
+        <input class="extra-info__input input" type="checkbox">
+        Молоко
+      </label>
+      <label class="extra-info__label label">
+        <input class="extra-info__input input" type="checkbox">
+        Витамины
+      </label>
+    </fieldset>
+    <button class="program__submit-btn" type="submit"> Отправить заявку </button>
+    <p class="program__required-wrapper">
+      <small class="required-wrapper__required">
+        * &mdash; Обязательные поля
+      </small>
+    </p>
+  </form>
+  <section class="location">
+    <h3 class="visually-hidden">
+      Где мы находимся
+    </h3>
+    <div class="location__wrapper">
+      <p class="location-invitation">
+        Приглашаем к сотрудничеству дилеров!
+      </p>
+      <address class="location__address">
+        ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+      </address>
+    </div>
+    <!-- карта -->
+  </section>
 </main>
+<footer class="page-footer">
+  <div class="page-footer__wrapper">
+    <div class="page-footer__logo logo">
+      <a class="logo__link"><!-- логотип кэт энерджи -->кэт энерджи</a>
+    </div>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+        HTML Academy
+        <!-- логотип академии -->
+      </a>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
 
