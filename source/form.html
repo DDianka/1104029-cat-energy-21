@@ -2,6 +2,8 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
@@ -17,17 +19,17 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
-              <a href="index.html">
+              <a href="index.html" class="main-nav__link">
                 Главная
               </a>
             </li>
             <li class="main-nav__item main-nav__item--active">
-              <a href="catalog.html">
+              <a href="catalog.html" class="main-nav__link">
                 Каталог продукции
               </a>
             </li>
             <li class="main-nav__item main-nav__item--active">
-              <a>
+              <a class="main-nav__link main-nav__link--active">
                 Подбор программы
               </a>
             </li>
@@ -44,21 +46,22 @@
       </p>
       <h2 class="visually-hidden"> Форма подбора программы </h2>
       <form class="program" action="https://echo.htmlacademy.ru" method="post">
-      <fieldset class="parameter">
+      <fieldset class="parameter program__fieldset">
         <legend class="visually-hidden">
           Параметры
         </legend>
           <label class="parameter__label label"> Имя:*
-            <input type="text" class="parameter__input input" name="name" placeholder="Барсик" required>
+            <input type="text" class="parameter__name parameter__input input" name="name" placeholder="Барсик" required>
           </label>
           <label class="parameter__label label"> Вес (кг):*
-            <input type="number" class="parameter__input input" name="weight" placeholder="7" required>
+            <input type="number" class="parameter__weight parameter__input input" name="weight" placeholder="7" required>
           </label>
           <label class="parameter__label label"> Возраст (лет):
-            <input type="number" class="parameter__input input" name="age"  placeholder="7">
+            <input type="number" class="parameter__age parameter__input input" name="age"  placeholder="7">
           </label>
+        <hr class="parameter__border border">
       </fieldset>
-      <fieldset class="plans">
+      <fieldset class="plans program__fieldset">
         <legend class="visually-hidden">
           В планах
         </legend>
@@ -74,46 +77,58 @@
             <input type="radio" class="plans__input input" name="plans_select">
             Не знаю (нужен ваш совет)
           </label>
+        <hr class="plans__border border">
       </fieldset>
-        <fieldset class="contacts">
+        <fieldset class="contacts program__fieldset">
           <legend class="contacts__title">
             Контактные данные (владельца кота)
           </legend>
+          <div class="contacts__wrapper">
+            <hr class="contacts__border">
             <label class="contacts__label label">
-              <input type="email" class="contacts_input input" placeholder="kuklachev@gmail.com" name="email" required>
+              E-mail:*
+              <input type="email" class="contacts__input-mail input" placeholder="kuklachev@gmail.com" name="email" required>
             </label>
             <label class="contacts__label label">
-              <input type="tel" class="contacts_input input" placeholder="8 (960) 900-60-90" name="phone" required>
+              Телефон:*
+              <input type="tel" class="contacts__input-tel input" placeholder="8 (960) 900-60-90" name="phone" required>
             </label>
+          </div>
         </fieldset>
-        <fieldset class="comment">
+        <fieldset class="comment program__fieldset">
           <legend class="comment__title">
             Комментарий
           </legend>
-          <label>
-          <textarea class="comment__textarea" placeholder="расскажите обо всех повадках кота" name="comment"></textarea>
-          </label>
+          <div class="comment__wrapper">
+            <hr class="comment__border">
+            <label>
+              <textarea class="comment__textarea" placeholder="расскажите обо всех повадках кота" name="comment"></textarea>
+            </label>
+          </div>
         </fieldset>
-        <fieldset class="extra-info">
+        <fieldset class="extra-info program__fieldset">
           <legend class="extra-info__title">
             Дополнительно
           </legend>
-          <label class="extra-info__label label">
-            <input class="extra-info__input input" type="checkbox" checked>
-            Сахарозаменитель
-          </label>
-          <label class="extra-info__label label">
-            <input class="extra-info__input input" type="checkbox">
-            Питьевая вода
-          </label>
-          <label class="extra-info__label label">
-            <input class="extra-info__input input" type="checkbox">
-            Молоко
-          </label>
-          <label class="extra-info__label label">
-            <input class="extra-info__input input" type="checkbox">
-            Витамины
-          </label>
+          <div class="extra-info__wrapper">
+            <hr class="extra-info__border">
+            <label class="extra-info__label label">
+              <input class="extra-info__input input" type="checkbox" checked>
+              Сахарозаменитель
+            </label>
+            <label class="extra-info__label label">
+              <input class="extra-info__input input" type="checkbox">
+              Питьевая вода
+            </label>
+            <label class="extra-info__label label">
+              <input class="extra-info__input input" type="checkbox">
+              Молоко
+            </label>
+            <label class="extra-info__label label">
+              <input class="extra-info__input input" type="checkbox">
+              Витамины
+            </label>
+          </div>
         </fieldset>
         <button class="program__submit-btn button" type="submit"> Отправить заявку </button>
         <p class="program__required-wrapper">
@@ -142,6 +157,7 @@
         <div class="page-footer__logo logo">
           <a class="logo__link"><!-- логотип кэт энерджи -->кэт энерджи</a>
         </div>
+        <hr class="page-footer__border">
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
@@ -155,8 +171,9 @@
             </li>
           </ul>
         </div>
+        <hr class="page-footer__border">
         <div class="page-footer__copyright copyright">
-          <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             HTML Academy
             <!-- логотип академии -->
           </a>
