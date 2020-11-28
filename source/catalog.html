@@ -19,35 +19,37 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
-              <a href="index.html">
+              <a class="main-nav__link" href="index.html">
                 Главная
               </a>
             </li>
             <li class="main-nav__item main-nav__item--active">
-              <a>
+              <a class="main-nav__link main-nav__link--active">
                 Каталог продукции
               </a>
             </li>
             <li class="main-nav__item main-nav__item--active">
-              <a href="form.html">
+              <a class="main-nav__link" href="form.html">
                 Подбор программы
               </a>
             </li>
           </ul>
         </div>
+        <hr class="main-nav__border">
       </nav>
     </header>
-    <main class="page-catalog">
-      <h1 class="page-catalog__title">
+    <main class="page-main">
+      <h1 class="page-main__title">
         Каталог продукции
       </h1>
       <section class="product">
-        <h2 class="product__title">
-          Продукты питания
+        <h2 class="visually-hidden">
+          Ассортимент продуктов
         </h2>
         <ul class="product__list">
-          <li>
-            <div class="product__item">
+          <li class="product__item">
+            <div>
+              <hr class="product__border">
               <img src="https://via.placeholder.com/150x150" alt="placeholder">
               <h3 class="product__title">Cat energy pro 500 г</h3>
               <table class="product__table">
@@ -67,8 +69,9 @@
               <button class="product__order-btn button" type="button">Заказать</button>
             </div>
           </li>
-          <li>
-            <div class="product__item">
+          <li class="product__item">
+            <div>
+              <hr class="product__border">
               <img src="https://via.placeholder.com/150x150" alt="placeholder">
               <h3 class="product__title">Cat energy pro 1000 г</h3>
               <table class="product__table">
@@ -88,8 +91,9 @@
               <button class="product__order-btn button" type="button">Заказать</button>
             </div>
           </li>
-          <li>
-            <div class="product__item">
+          <li class="product__item">
+            <div>
+              <hr class="product__border">
               <img src="https://via.placeholder.com/150x150" alt="placeholder">
               <h3 class="product__title">Cat energy pro 500 г</h3>
               <table class="product__table">
@@ -109,8 +113,9 @@
               <button class="product__order-btn button" type="button">Заказать</button>
             </div>
           </li>
-          <li>
-            <div class="product__item">
+          <li class="product__item">
+            <div>
+              <hr class="product__border">
               <img src="https://via.placeholder.com/150x150" alt="placeholder">
               <h3 class="product__title">Cat energy pro 1000 г</h3>
               <table class="product__table">
@@ -130,8 +135,9 @@
               <button type="button" class="product__order-btn button">Заказать</button>
             </div>
           </li>
-          <li>
-            <div class="product__item">
+          <li class="product__item">
+            <div>
+              <hr class="product__border">
               <img src="https://via.placeholder.com/150x150" alt="placeholder">
               <h3 class="product__title">Cat energy slim 500 г</h3>
               <table class="product__table">
@@ -151,8 +157,9 @@
               <button class="product__order-btn button" type="button">Заказать</button>
             </div>
           </li>
-          <li>
-            <div class="product__item">
+          <li class="product__item">
+            <div>
+              <hr class="product__border">
               <img src="https://via.placeholder.com/150x150" alt="placeholder">
               <h3 class="product__title">Cat energy slim 1000 г</h3>
               <table class="product__table">
@@ -172,8 +179,9 @@
               <button type="button" class="product__order-btn button">Заказать</button>
             </div>
           </li>
-          <li>
-            <div class="product__item">
+          <li class="product__item">
+            <div>
+              <hr class="product__border">
               <img src="https://via.placeholder.com/150x150" alt="placeholder">
               <h3 class="product__title">Cat energy slim 500 г</h3>
               <table class="product__table">
@@ -193,24 +201,28 @@
               <button type="button" class="product__order-btn button">Заказать</button>
             </div>
           </li>
-            <li>
-              <div class="product__item">
+            <li class="product__item">
+              <div class="product__container">
+                <hr class="product__border">
                 <!-- плюсик -->
-                <h3 class="product__title">
+                <h3 class="product__topic">
                   Показать еще 100500 товаров
                 </h3>
                 <p>
                   на самом деле вкусов гораздо больше!
                 </p>
-                <button type="button" class="product__show-more-btn">Показать еще</button>
+                <button type="button" class="product__show-more-btn button">Показать еще</button>
               </div>
             </li>
         </ul>
       </section>
       <section class="extra-product">
+        <h2 class="extra-product__title"> Дополнительные товары </h2>
+        <hr class="extra-product__title-border">
+        <hr class="extra-product__border">
         <ul class="extra-product__list">
-          <li>
-            <div class="extra-product__item">
+          <li class="extra-product__item">
+            <div>
               <dl>
                 <dt class="extra-product__name">
                   Сахарозаменитель
@@ -222,10 +234,12 @@
                   200 Р.
                 </dd>
               </dl>
+              <button type="button" class="extra-product__order-btn button">Заказать</button>
+              <hr class="extra-product__border">
             </div>
           </li>
-          <li>
-            <div class="extra-product__item">
+          <li class="extra-product__item">
+            <div>
               <dl>
                 <dt class="extra-product__name">
                   Питьевая вода
@@ -237,10 +251,12 @@
                   50 Р.
                 </dd>
               </dl>
+              <button type="button" class="extra-product__order-btn button">Заказать</button>
+              <hr class="extra-product__border">
             </div>
           </li>
-          <li>
-            <div class="extra-product__item">
+          <li class="extra-product__item">
+            <div>
               <dl>
                 <dt class="extra-product__name">
                   Молоко
@@ -252,10 +268,12 @@
                   100 Р.
                 </dd>
               </dl>
+              <button type="button" class="extra-product__order-btn button">Заказать</button>
+              <hr class="extra-product__border">
             </div>
           </li>
-          <li>
-            <div class="extra-product__item">
+          <li class="extra-product__item">
+            <div>
               <dl>
                 <dt class="extra-product__name">
                   Витамины
@@ -267,9 +285,11 @@
                   300 Р.
                 </dd>
               </dl>
+              <button type="button" class="extra-product__order-btn button">Заказать</button>
+              <hr class="extra-product__border">
             </div>
           </li>
-          <li>
+          <li class="extra-product__item">
             <div class="extra-product__exclusive">
               <p class="extra-product__offer">
                 Закажите все и получите чехол для кота в подарок!
