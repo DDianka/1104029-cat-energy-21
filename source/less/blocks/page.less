@@ -1,9 +1,30 @@
+.page {
+  min-height: 100%;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .page__body {
   font-family: "Oswald", "Arial", sans-serif;
   background-color: @white;
-  max-width: 320px;
-  margin: auto;
+  color: @black;
+  min-height: 100%;
+  margin: 0;
   padding: 0;
+}
+
+.page__wrapper {
+  margin: 0 auto;
+  @media (min-width: @mobile) {
+      width: 320px;
+  }
+  @media (min-width: @tablet) {
+      width: 768px;
+  }
+  @media (min-width: @desktop) {
+    width: 1440px;
+  }
 }
 
 .visually-hidden {

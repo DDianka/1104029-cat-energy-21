@@ -1,10 +1,16 @@
 .example {
   background-color: @grey-bg;
-  height: 705px;
+  height: 1081px;
 }
 
 .example__wrapper {
-  margin-left: 20px;
+  padding-left: 20px;
+  width: 320px;
+  @media (min-width: @tablet) {
+    width: 768px;
+    background-color: @white;
+    height: 619px;
+  }
 }
 
 .example__title {
@@ -12,6 +18,10 @@
   line-height: 40px;
   font-weight: 400;
   padding-top: 18px;
+  @media (min-width: @tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example__story {
