@@ -1,15 +1,26 @@
 .example {
   background-color: @grey-bg;
-  height: 1081px;
+  height: 705px;
+  @media (min-width: @tablet) {
+    height: 1081px;
+    background-color: @white;
+  }
+  @media (min-width: @desktop) {
+    width: 1440px;
+    height: 656px;
+  }
 }
 
 .example__wrapper {
-  padding-left: 20px;
   width: 320px;
   @media (min-width: @tablet) {
-    width: 768px;
-    background-color: @white;
-    height: 619px;
+  }
+  @media (min-width: @desktop) {
+    background-color: @grey-bg;
+    width: 1440px;
+    height: 462px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -21,6 +32,27 @@
   @media (min-width: @tablet) {
     font-size: 60px;
     line-height: 60px;
+  }
+  @media (min-width: @desktop) {
+    height: 196px;
+    width: 1440px;
+    background-color: @white;
+    display: block;
+  }
+}
+
+.example__content {
+  @media (min-width: @tablet) {
+    width: 768px;
+    height: 482px;
+  }
+}
+
+.example__result-img-slider {
+  @media (min-width: @tablet) {
+    width: 768px;
+    height: 462px;
+    background-color: @grey-bg;
   }
 }
 
