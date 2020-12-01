@@ -2,6 +2,15 @@
   background-color: @basic-grey;
   width: 320px;
   height: 236px;
+  @media (min-width: @tablet) {
+    width: 768px;
+    display: flex;
+    height: 150px;
+    justify-content: space-between;
+  }
+  @media (min-width: @desktop) {
+    width: 1440px;
+  }
 }
 
 .page-footer__logo {
@@ -15,4 +24,7 @@
   height: 1px;
   width: 280px;
   margin-left: 20px;
+  @media (min-width: @tablet) {
+    display: none;
+  }
 }

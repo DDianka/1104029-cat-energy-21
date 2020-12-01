@@ -7,11 +7,27 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+  @media (min-width: @tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .functionality__list {
   list-style: none;
   padding: 0;
+  @media (min-width: @tablet) {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: 640px;
+  }
+  @media (min-width: @desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1440px;
+    justify-content: space-between;
+  }
 }
 
 .functionality__item {
@@ -19,4 +35,10 @@
   font-size: 14px;
   line-height: 18px;
   width: 194px;
+  @media (min-width: @tablet) {
+    font-size: 16px;
+    line-height: 24px;
+    width: 250px;
+    height: 280px;
+  }
 }

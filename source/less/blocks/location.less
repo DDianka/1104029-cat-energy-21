@@ -1,5 +1,17 @@
 .location__wrapper {
   margin: 28px 19px 22px 19px;
+  @media (min-width: @tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 66px 72px 50px 71px ;
+  }
+  @media (min-width: @desktop) {
+    width: 570px;
+    height: 201px;
+    padding: 0;
+    margin-top: 96px;
+    display: flex;
+  }
 }
 
 .location-invitation {
@@ -9,6 +21,11 @@
   text-transform: uppercase;
   width: 140px;
   color: @black-lighter;
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 21px;
+    width: 151px;
+  }
 }
 
 .location__address {
@@ -19,4 +36,10 @@
   font-style: normal;
   width: 140px;
   color: @grey-dark;
+  @media (min-width: @tablet) {
+    text-align: end;
+    margin-left: auto;
+    font-size: 16px;
+    width: 159px;
+  }
 }
