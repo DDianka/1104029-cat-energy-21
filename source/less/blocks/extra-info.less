@@ -9,10 +9,26 @@
   box-sizing: border-box;
 }
 
-.extra-info__wrapper {
+.extra-info {
   position: relative;
+}
+
+.extra-info__wrapper {
   padding: 0;
   margin-left: 19px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  @media (min-width: @tablet) {
+    width: 565px;
+    height: 218px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: @desktop) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 1440px;
+  }
 }
 
 .extra-info__title {

@@ -68,7 +68,11 @@
   height: 1px;
   margin-top: 24px;
   margin-bottom: 20px;
+  @media (min-width: @tablet) {
+    display: none;
+  }
 }
+
 .main-nav__link--active {
 @media (min-width: @tablet) {
     display: block;

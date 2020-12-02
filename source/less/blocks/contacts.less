@@ -9,10 +9,19 @@
   box-sizing: border-box;
 }
 
-.contacts__wrapper {
+.contacts {
   position: relative;
+}
+
+.contacts__wrapper {
   padding: 0;
   margin-left: 19px;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: @desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .contacts__title {
