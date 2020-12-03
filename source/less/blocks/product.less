@@ -41,6 +41,9 @@
   height: 1px;
   margin-top: 24px;
   margin-bottom: 20px;
+  @media (min-width: @tablet) {
+    display: none;
+  }
 }
 
 .product__item {
@@ -49,6 +52,14 @@
 
 .product__list {
   padding: 0;
+  @media (min-width: @tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 768px;
+  }
+  @media (min-width: @desktop) {
+    width: 1440px;
+  }
 }
 
 .product__topic {
