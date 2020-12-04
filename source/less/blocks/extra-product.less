@@ -62,8 +62,10 @@
 
 .extra-product {
   position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  @media (min-width: @desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .extra-product__title-border {
@@ -92,4 +94,24 @@
   width: 161px;
   text-align: center;
   padding: 186px 61px 43px 58px;
+}
+
+.extra-product__product {
+  @media (min-width: @tablet) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.extra-product__description {
+  @media (min-width: @tablet) {
+    display: flex;
+  }
+}
+
+.extra-product__container {
+  @media (min-width: @desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
